@@ -38,7 +38,7 @@ namespace Blazor.Extensions
 
         public static async Task<WebGL2Context> CreateWebGL2Async(this BECanvasComponent canvas, WebGLContextAttributes attributes)
         {
-            return await new WebGL2Context(canvas, attributes).InitializeAsync().ConfigureAwait(false) as WebGL2Context
+            return await new WebGL2Context(canvas, attributes).InitializeAsync().ConfigureAwait(false) as WebGL2Context;
         }
     }
 }
