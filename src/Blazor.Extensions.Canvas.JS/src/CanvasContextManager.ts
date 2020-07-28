@@ -12,7 +12,7 @@ export class ContextManager {
     this.contextName = contextName;
     if (contextName === "2d")
       this.prototypes = CanvasRenderingContext2D.prototype;
-    else if (contextName === "webgl" || contextName === "experimental-webgl") {
+    else if (contextName === "webgl"|| contextName === "webgl2" || contextName === "experimental-webgl") {
       this.prototypes = WebGLRenderingContext.prototype;
       this.webGLContext = true;
     } else

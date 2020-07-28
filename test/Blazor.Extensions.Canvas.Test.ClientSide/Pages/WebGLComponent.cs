@@ -29,7 +29,7 @@ namespace Blazor.Extensions.Canvas.Test.ClientSide.Pages
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            this._context = await this._canvasReference.CreateWebGLAsync(new WebGLContextAttributes
+            this._context = await this._canvasReference.CreateWebGL2Async(new WebGLContextAttributes
             {
                 PowerPreference = WebGLContextAttributes.POWER_PREFERENCE_HIGH_PERFORMANCE
             });
